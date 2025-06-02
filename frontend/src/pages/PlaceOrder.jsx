@@ -30,6 +30,9 @@ function PlaceOrder() {
   const onSubmitHandler=async(e)=>{
     e.preventDefault()
     try {
+      if(!token){
+        navigate('/login');
+      }
       let orderItems=[];
 
       for(const items in cartItems){
