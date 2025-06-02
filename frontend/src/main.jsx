@@ -11,10 +11,10 @@ import Contact from './pages/Contact';
 import Product from './pages/Product';
 import Cart from './pages/Cart';
 import Login from './pages/Login';
-import PlaceOrder from './pages/PLaceOrder';
+import PlaceOrder from './pages/PlaceOrder';
 import Order from './pages/Order';
 import Verify from './pages/verify';
-import MyProfile from './pages/MyProfile';
+
 
 const router = createBrowserRouter([
   {
