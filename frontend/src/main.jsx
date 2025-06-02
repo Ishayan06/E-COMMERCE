@@ -28,7 +28,7 @@ const router = createBrowserRouter([
       {path:'product/:productId',element:<Product/>},
       {path:'cart',element:<Cart/>},
       {path:'login',element:<Login/>},
-      {path: 'placeorder', element: <PlaceOrder /> },
+      {path: 'placeorder', element: <PlaceOrder/> },
       {path:'order',element:<Order/>},
       {path:'verify',element:<Verify/>},
       
