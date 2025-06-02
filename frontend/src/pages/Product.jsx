@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { ShopContext } from "../context/ShopContext";
 import { assets } from "../assets/assets";
 import RelatedProduct from "../components/RelatedProduct";
+import { toast } from "react-toastify";
 function Product() {
   const { productId } = useParams();
   const { products, currency,addToCart } = useContext(ShopContext);
@@ -19,6 +20,10 @@ function Product() {
       }
     });
   };
+  const cartHandle=()=>{
+    addToCart(productData._id,size);
+    toast.success('Added to Cart');
+  }
   useEffect(() => {
     fetchProductData();
   }, [productId, products]);
@@ -77,7 +82,7 @@ function Product() {
               ))}
             </div>
           </div>
-          <button onClick={()=>addToCart(productData._id,size)} className="bg-black text-white px-8 py-3 text-sm active:bg-gray-700 w-[180px]">
+          <button onClick={cartHandle} className="bg-black text-white px-8 py-3 text-sm active:bg-gray-700 w-[180px]">
             ADD TO CART
           </button>
           <hr className="mt-8 sm:w-4/5"/>
