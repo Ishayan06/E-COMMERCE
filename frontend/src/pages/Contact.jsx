@@ -14,7 +14,7 @@ function Contact() {
         <div className='flex flex-col justify-center items-start gap-6 '>
           <p className='font-semibold text-xl text-gray-600'>Our Store</p>
           <p className='text-gray-500'>54709 wllms station <br />suite 350 washington usa</p>
-          <p className='text-gray-500'>TEl :(415)555-8086 <br />Email:admin@forerver.com</p>
+          <p className='text-gray-500'>TEl :(415)555-8086 <br />Email:ishayankundu6@gmail.com</p>
           <p className='font-semibold text-xl text-gray-600'>Career at forever</p>
           <p className='text-gray-500'>Learn more about out teams and job openings.</p>
           <button className='border py-2 px-4 hover:bg-black hover:text-white transition-all'>Explore us</button>

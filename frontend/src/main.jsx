@@ -14,6 +14,7 @@ import Login from './pages/Login';
 import PlaceOrder from './pages/PLaceOrder';
 import Order from './pages/Order';
 import Verify from './pages/verify';
+import MyProfile from './pages/MyProfile';
 
 const router = createBrowserRouter([
   {
@@ -29,7 +30,8 @@ const router = createBrowserRouter([
       {path:'login',element:<Login/>},
       {path: 'placeorder', element: <PlaceOrder /> },
       {path:'order',element:<Order/>},
-      {path:'verify',element:<Verify/>}
+      {path:'verify',element:<Verify/>},
+      
 
     ],
   },
