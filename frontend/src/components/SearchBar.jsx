@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { ShopContext } from '../context/ShopContext';
 import { assets } from '../assets/assets';
-function SeachBar() {
+function SearchBar() {
     const {search,setSearch,showSearch,setShowSearch}=useContext(ShopContext);
   return showSearch? (
     <div className='border-t border-b bg-gray-50 text-center'>
@@ -9,9 +9,9 @@ function SeachBar() {
             <input value={search} onChange={(e)=>setSearch(e.target.value)} type="text" className='flex-1  outline-none bg-inherit text-sm' placeholder='Search'/>
             <img src={assets.search_icon} className='w-4 ' alt="" />
         </div>
-      <img onClick={()=>{setShowSeacrh(false)}} src={assets.cross_icon} className='w-3 inline cursor-pointer' alt="" />
+      <img onClick={()=>{setShowSearch(false)}} src={assets.cross_icon} className='w-3 inline cursor-pointer' alt="" />
     </div>
   ) :null;
 }
 
-export default SeachBar;
+export default SearchBar;

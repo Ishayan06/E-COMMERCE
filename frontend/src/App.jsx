@@ -2,7 +2,7 @@ import React from 'react';
 import { Outlet } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import SeachBar from './components/SeachBar';
+import SearchBar from './components/SearchBar';
 import { ToastContainer, toast } from 'react-toastify';
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
     <div className="px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]">
       <ToastContainer/>
       <Navbar/>
-      <SeachBar/>
+      <SearchBar/>
       <Outlet />
       <Footer/>
     </div>
