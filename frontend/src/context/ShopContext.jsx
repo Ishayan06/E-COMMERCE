@@ -12,7 +12,7 @@ const backendUrl=import.meta.env.VITE_BACKEND_URL
 const [search , setSearch]=useState("");
 const [token , setToken]=useState("");
 const [product,setProducts]=useState([]);
-const [showSearch,setShowSeacrh]=useState(false);
+const [showSearch,setShowSearch]=useState(false);
 const [cartItems,setCartItems]=useState({});
 const [lastOrder, setLastOrder] = useState(null);
 
@@ -129,7 +129,7 @@ useEffect(()=>{
     }
 },[])
     const value ={
-       products,token,setToken,currency,delivery_fee,search,setSearch,showSearch,setShowSeacrh,cartItems,setCartItems,addToCart,getCartCount,updateQuantity,getCartAmount,backendUrl,lastOrder,setLastOrder
+       products,token,setToken,currency,delivery_fee,search,setSearch,showSearch,setShowSearch,cartItems,setCartItems,addToCart,getCartCount,updateQuantity,getCartAmount,backendUrl,lastOrder,setLastOrder
     }
 
     return (
