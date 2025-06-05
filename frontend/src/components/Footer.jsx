@@ -31,7 +31,7 @@ function Footer() {
       </div>
         <hr className='mt-5 mb-5'/>
         <div className='flex justify-center text-sm sm:text-base '>
-            <p>Copyright 2024@ greatstack.dev - All Right Reserved.</p>
+            <p>Copyright 2025@ forever.dev - All Right Reserved.</p>
         </div>
     </div>
   );
