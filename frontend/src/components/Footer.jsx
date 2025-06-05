@@ -22,7 +22,7 @@ function Footer() {
                 <p className='font-bold text-2xl'>GET IN TOUCH</p>
                 <div className='list-none text-gray-700'>
                     <li>+1-000-000-0000</li>
-                    <li>greatstackdev@gmail.com</li>
+                    <li>ishayankundu6@gmail.com</li>
                     <li>Instagram</li>
                     
                 </div>
